@@ -1,0 +1,8 @@
+unsubscribe:
+  id: unsubscribe.s1.simple-v0
+  description: Checks whether a user wants to unsubscribe
+  metrics: [accuracy]
+unsubscribe.s1.simple-v0:
+  class: evals.elsuite.basic.match:Match
+  args:
+    samples_jsonl: unsubscribe/samples.jsonl
