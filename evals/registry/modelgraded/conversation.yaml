@@ -1,0 +1,23 @@
+conversation:
+  prompt: |-
+    You are comparing the conversation X and Y. Here is the data:
+    [BEGIN DATA]
+    ************
+    [Submission X]: {input}
+    ************
+    [Submission Y]: {input_y}
+    ************
+    [END DATA]
+
+    Which submission is a better quality conversation by the assistant?
+
+    (A) X and Y are similar good
+    (B) X is somewhat better than Y
+    (C) X is overwhelmingly better than Y
+    (D) Y is somewhat better than X
+    (E) Y is overwhelmingly better than X
+    
+    Explain your reasoning, then on the last line of your answer, write the letter corresponding to your choice.
+  choice_strings: ABCDE
+  input_outputs:
+    input: completion

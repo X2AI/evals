@@ -1,0 +1,10 @@
+# a simple modelgraded eval checking if a completion is funny or not
+conversation:
+  id: conversation.dev.v0
+  metrics: [accuracy]
+conversation.dev.v0:
+  class: evals.elsuite.modelgraded.classify:ModelBasedClassify
+  args:
+    samples_jsonl: test_modelgraded/conversation.jsonl
+    eval_type: cot_classify
+    modelgraded_spec: conversation
